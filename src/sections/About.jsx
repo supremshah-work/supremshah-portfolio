@@ -46,7 +46,6 @@ function About() {
     setReady(true);
   }, []);
 
-  // autoplay (stable loop)
   useEffect(() => {
     if (paused) return;
 
@@ -72,7 +71,6 @@ scroll-mt-24
       "
     >
       <div className="max-w-6xl w-full flex flex-col md:flex-row gap-16 md:gap-12">
-        {/* LEFT */}
         <div className="md:w-[60%]">
           <ScrollReveal type="left">
             <h2 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -106,7 +104,6 @@ scroll-mt-24
           </ScrollReveal>
         </div>
 
-        {/* RIGHT */}
         <div className="md:w-[40%]">
           <ScrollReveal type="right">
             <div className="relative h-72 flex items-center overflow-hidden isolate px-4">

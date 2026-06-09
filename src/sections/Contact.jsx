@@ -17,7 +17,6 @@ scroll-mt-24
         overflow-hidden
       "
     >
-      {/* subtle background glow */}
       <GlowOrbs variant="contact" />
       <div className="max-w-5xl w-full relative z-10">
         <ScrollReveal type="down">
@@ -32,10 +31,9 @@ scroll-mt-24
         </ScrollReveal>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* EMAIL CARD */}
           <ScrollReveal type="left" delay={0.1}>
             <a
-              href="mailto:your@email.com"
+              href="mailto:supremshah.work@gmail.com"
               className="
                 group
                 block
@@ -67,16 +65,18 @@ scroll-mt-24
                 <div>
                   <p className="text-sm text-zinc-500">Email</p>
 
-                  <h3 className="text-xl font-semibold">your@email.com</h3>
+                  <h3 className="text-xl font-semibold">
+                    supremshah.work@gmail.com
+                  </h3>
                 </div>
               </div>
             </a>
           </ScrollReveal>
 
-          {/* LINKEDIN CARD */}
           <ScrollReveal type="left" delay={0.2}>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/supremshah/"
+              target="_blank"
               className="
                 group
                 block

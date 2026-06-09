@@ -14,12 +14,10 @@ scroll-mt-24
         overflow-hidden
       "
     >
-      {/* background glow */}
       <div className="absolute w-`75` h-175 bg-blue-300/10 dark:bg-blue-500/10 blur-3xl rounded-full -left-52 top-20" />
       <div className="absolute w-175 h-175 bg-purple-300/10 dark:bg-purple-500/10 blur-3xl rounded-full -right-52 bottom-10" />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        {/* HEADER */}
         <ScrollReveal>
           <div className="text-center">
             <h2 className="text-5xl md:text-6xl font-bold">Interaction Lab</h2>
@@ -30,7 +28,6 @@ scroll-mt-24
           </div>
         </ScrollReveal>
 
-        {/* GRID */}
         <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
           <GlowCard />
           <CursorPhysicsCard />
@@ -40,9 +37,6 @@ scroll-mt-24
   );
 }
 
-/* =========================================================
-   CARD 1 — NEON GLOW SYSTEM
-========================================================= */
 function GlowCard() {
   const ref = useRef(null);
 
@@ -52,7 +46,6 @@ function GlowCard() {
   const [ripples, setRipples] = useState([]);
   const trailTimer = useRef(null);
 
-  // force re-render for smooth glow animation
   const [, setTick] = useState(0);
 
   useEffect(() => {
@@ -90,7 +83,6 @@ function GlowCard() {
 
     setPos({ x, y });
 
-    // leave water trail while dragging
     if (e.buttons === 1) {
       if (!trailTimer.current) {
         createRipple(x, y);
@@ -120,7 +112,6 @@ function GlowCard() {
         dark:shadow-[0_0_100px_rgba(147,51,234,0.25)]
       "
     >
-      {/* SMALLER IDLE GLOW */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -135,7 +126,6 @@ function GlowCard() {
         }}
       />
 
-      {/* WATER RIPPLES */}
       {ripples.map((ripple) => (
         <div
           key={ripple.id}
@@ -155,7 +145,6 @@ function GlowCard() {
         />
       ))}
 
-      {/* TITLE */}
       <div className="absolute bottom-0 left-0 p-4 md:p-6 z-10">
         <h3 className="text-lg md:text-2xl font-semibold">
           Liquid Light Surface
@@ -170,9 +159,6 @@ function GlowCard() {
   );
 }
 
-/* =========================================================
-   CARD 2 — CURSOR PHYSICS SYSTEM
-========================================================= */
 function CursorPhysicsCard() {
   const [pos, setPos] = useState({ x: 200, y: 200 });
   const target = useRef({ x: 200, y: 200 });
@@ -214,14 +200,12 @@ function CursorPhysicsCard() {
         cursor-none
       "
     >
-      {/* fake UI */}
       <div className="absolute inset-0 p-4 md:p-8 space-y-3 md:space-y-4 opacity-40">
         <div className="h-4 w-2/3 bg-white/5 rounded" />
         <div className="h-4 w-1/2 bg-white/5 rounded" />
         <div className="h-4 w-3/4 bg-white/5 rounded" />
       </div>
 
-      {/* CURSOR */}
       <div
         className="absolute w-10 h-10 rounded-full bg-blue-500 blur-sm pointer-events-none"
         style={{
@@ -231,7 +215,6 @@ function CursorPhysicsCard() {
         }}
       />
 
-      {/* TITLE BOTTOM */}
       <div className="absolute bottom-0 left-0 p-4 md:p-6 z-10">
         <h3 className="text-lg md:text-2xl font-semibold">
           Cursor Physics Layer

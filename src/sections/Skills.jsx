@@ -17,34 +17,25 @@ function Skills() {
     { name: "Git", icon: <FaGitAlt className="text-red-500 text-5xl" /> },
   ];
 
-  // ONLY orbit position
   const [angle, setAngle] = useState(0);
 
   const isDragging = useRef(false);
   const lastX = useRef(0);
 
-  // ONLY speed changes here
-  const baseSpeed = 0.1; // 🎯 your real default orbit speed
+  const baseSpeed = 0.1;
   const speed = useRef(0);
   const velocity = useRef(0);
 
-  // =========================
-  // MAIN ANIMATION LOOP
-  // =========================
   useEffect(() => {
     let frame;
 
     const animate = () => {
-      // apply drag impulse
       speed.current += velocity.current;
 
-      // decay drag influence
       velocity.current *= 0.92;
 
-      // smooth return to base speed
       speed.current += (0 - speed.current) * 0.02;
 
-      // final rotation = base + dynamic
       const finalSpeed = baseSpeed + speed.current;
 
       setAngle((prev) => {
@@ -65,9 +56,6 @@ function Skills() {
     return () => cancelAnimationFrame(frame);
   }, []);
 
-  // =========================
-  // DRAG CONTROL (ONLY SPEED)
-  // =========================
   const handleMouseDown = (e) => {
     isDragging.current = true;
     lastX.current = e.clientX;
@@ -79,11 +67,9 @@ function Skills() {
     const delta = e.clientX - lastX.current;
     lastX.current = e.clientX;
 
-    // find mouse Y position relative to center
     const centerY = window.innerHeight / 2;
     const mouseFactor = (e.clientY - centerY) / centerY;
 
-    // 🔥 KEY FIX: torque depends on position on orbit
     velocity.current = delta * 0.01 * (1 + mouseFactor);
   };
 
@@ -91,9 +77,6 @@ function Skills() {
     isDragging.current = false;
   };
 
-  // =========================
-  // ORBIT SHAPE (UNCHANGED)
-  // =========================
   const radiusX =
     typeof window !== "undefined" && window.innerWidth < 768 ? 140 : 350;
   const radiusY =
@@ -123,7 +106,6 @@ function Skills() {
         </h3>
       </div>
 
-      {/* ORBIT WRAPPER */}
       <div
         className="relative
   w-full max-w-100
