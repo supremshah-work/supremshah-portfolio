@@ -3,7 +3,7 @@ import ScrollReveal from "../components/ScrollReveal";
 import GlowOrbs from "../components/GlowOrbs";
 
 function Hero() {
-  const roles = ["Developer.", "Designer.", "Builder.", "Creator."];
+  const roles = ["Learner.", "Builder.", "Explorer.", "Developer."];
 
   const [roleIndex, setRoleIndex] = useState(0);
   const [text, setText] = useState("");
@@ -82,8 +82,8 @@ function Hero() {
 
       <ScrollReveal delay={0.3}>
         <p className="mt-6 text-zinc-600 dark:text-zinc-400 text-base sm:text-lg md:text-xl max-w-xl mx-auto text-center px-2">
-          I build clean, interactive web experiences with React and modern
-          frontend technologies.
+          I’m a frontend developer learning React by building interactive UI
+          experiences that feel smooth and intentional.
         </p>
       </ScrollReveal>
 
@@ -100,7 +100,7 @@ function Hero() {
               bg-black text-white dark:bg-white dark:text-black
             "
           >
-            Contact Me!
+            Let’s talk
           </button>
         </div>
       </ScrollReveal>

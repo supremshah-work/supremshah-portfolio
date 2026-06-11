@@ -23,7 +23,7 @@ scroll-mt-24
             <h2 className="text-5xl md:text-6xl font-bold">Interaction Lab</h2>
 
             <p className="mt-6 text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              A collection of interactive UI systems and motion experiments.
+              A collection of interactive UI experiments you can play with.
             </p>
           </div>
         </ScrollReveal>
@@ -147,12 +147,12 @@ function GlowCard() {
 
       <div className="absolute bottom-0 left-0 p-4 md:p-6 z-10">
         <h3 className="text-lg md:text-2xl font-semibold">
-          Liquid Light Surface
+          Interactive Light Surface
         </h3>
 
         <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400 mt-2">
-          Interactive light surface where movement and touch generate fluid
-          energy waves.
+          Move your cursor across the surface to see light flow and react in
+          real time. Click to create ripple effects.
         </p>
       </div>
     </div>
@@ -216,11 +216,10 @@ function CursorPhysicsCard() {
       />
 
       <div className="absolute bottom-0 left-0 p-4 md:p-6 z-10">
-        <h3 className="text-lg md:text-2xl font-semibold">
-          Cursor Physics Layer
-        </h3>
+        <h3 className="text-lg md:text-2xl font-semibold">Cursor Physics</h3>
         <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400 mt-2">
-          Spring-based cursor motion constrained inside UI container.
+          A floating element that smoothly follows your cursor using
+          spring-based motion.
         </p>
       </div>
     </div>

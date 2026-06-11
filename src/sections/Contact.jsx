@@ -24,8 +24,8 @@ scroll-mt-24
             <h2 className="text-5xl md:text-6xl font-bold">Let's Connect</h2>
 
             <p className="mt-6 text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              Currently open to freelance opportunities, frontend development
-              projects, and collaborative work.
+              Open to frontend development opportunities and collaborative
+              projects.
             </p>
           </div>
         </ScrollReveal>
@@ -65,7 +65,7 @@ scroll-mt-24
                 <div>
                   <p className="text-sm text-zinc-500">Email</p>
 
-                  <h3 className="text-xl font-semibold">
+                  <h3 className="text-xl font-semibold break-all">
                     supremshah.work@gmail.com
                   </h3>
                 </div>

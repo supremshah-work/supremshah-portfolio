@@ -96,14 +96,19 @@ function Skills() {
     >
       <GlowOrbs variant="skills" />
       <ScrollReveal type="down">
-        <h2 className="text-3xl md:text-5xl font-bold mb-10">Tools I Use</h2>
+        <h2 className="text-3xl md:text-5xl font-bold mb-10">
+          Tools I Work With
+        </h2>
       </ScrollReveal>
 
       <div className="absolute text-center z-10 px-4">
-        <p className="text-base md:text-xl text-zinc-500">For Creating</p>
+        <p className="text-base md:text-xl text-zinc-500">For building</p>
         <h3 className="text-xl md:text-3xl font-semibold">
-          Modern Web Experiences
+          Interactive UI Systems
         </h3>
+        <p className="text-xs opacity-0 md:text-sm text-zinc-500 mt-2 md:opacity-70">
+          Drag to rotate
+        </p>
       </div>
 
       <div

@@ -13,28 +13,28 @@ function About() {
   const items = [
     {
       icon: <FaLightbulb className="text-yellow-400 text-lg" />,
-      title: "I Like Building Things",
-      text: "I enjoy combining visual design and code to create complete experiences.",
+      title: "Building mindset",
+      text: "I like turning ideas into working interfaces through focused builds.",
     },
     {
       icon: <FaEye className="text-blue-400 text-lg" />,
-      title: "I Value Clarity",
-      text: "I focus on layouts that are simple, clear, and easy to navigate.",
+      title: "Clarity first",
+      text: "I prefer layouts that are simple, readable, and easy to understand.",
     },
     {
       icon: <FaMagic className="text-purple-400 text-lg" />,
-      title: "I Notice The Details",
+      title: "Detail focused",
       text: "I enjoy polishing the small things that make a product feel complete.",
     },
     {
       icon: <FaRocket className="text-green-400 text-lg" />,
       title: "Always Improving",
-      text: "I'm always exploring new tools and better approaches.",
+      text: "I keep exploring new tools and improving how I build interfaces.",
     },
     {
       icon: <FaSeedling className="text-emerald-400 text-lg" />,
-      title: "One Project at a Time",
-      text: "Every project is an opportunity to improve.",
+      title: "Steady progress",
+      text: "Each project helps me improve a small part of how I think and build.",
     },
   ];
 
@@ -78,28 +78,30 @@ scroll-mt-24
             </h2>
 
             <p className="mt-6 text-base md:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              I'm interested in the intersection of design and development,
-              where good ideas become practical experiences.
+              I learn best by building. Most of my frontend understanding comes
+              from small UI experiments and steady refinement.
             </p>
 
             <p className="mt-4 text-sm md:text-base text-zinc-500 dark:text-zinc-500 leading-relaxed">
-              I enjoy creating interfaces that are clear, responsive, and
-              enjoyable to use.
+              I focus on how interfaces behave, not just how they look, and how
+              they feel when used.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3">
-              {["React", "JavaScript", "Tailwind CSS", "UI Design"].map((t) => (
-                <span
-                  key={t}
-                  className="
+              {["React", "JavaScript", "Tailwind CSS", "UI Interaction"].map(
+                (t) => (
+                  <span
+                    key={t}
+                    className="
                     px-4 py-2 rounded-full
                     bg-black/5 dark:bg-white/10 hover:scale-110 hover:shadow-lg dark:hover:shadow-white/10 transition-all
                     text-sm
                   "
-                >
-                  {t}
-                </span>
-              ))}
+                  >
+                    {t}
+                  </span>
+                ),
+              )}
             </div>
           </ScrollReveal>
         </div>
