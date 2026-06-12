@@ -70,7 +70,7 @@ function Hero() {
         </h1>
 
         <ScrollReveal delay={0.15}>
-          <div className="mt-6 flex justify-center items-center text-lg sm:text-xl md:text-2xl font-medium text-zinc-600 dark:text-zinc-400 min-h-10">
+          <div className="mt-6 ml-10 flex justify-center items-center text-lg sm:text-xl md:text-2xl font-medium text-zinc-600 dark:text-zinc-400 min-h-10">
             <span>I am a&nbsp;</span>
 
             <span className="inline-block w-[10ch] text-left font-semibold text-violet-500">

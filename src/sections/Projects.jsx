@@ -20,10 +20,10 @@ scroll-mt-24
       <div className="max-w-6xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center">
-            <h2 className="text-5xl md:text-6xl font-bold">Interaction Lab</h2>
+            <h2 className="text-5xl md:text-6xl font-bold">UI Experiments</h2>
 
             <p className="mt-6 text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-              A collection of interactive UI experiments you can play with.
+              Small interactive experiments built while exploring UI and motion.
             </p>
           </div>
         </ScrollReveal>
